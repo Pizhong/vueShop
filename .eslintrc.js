@@ -19,6 +19,6 @@ module.exports = {
         'vue',
     ],
     'rules': {
-
-    },
-};
+        'linebreak-style': ['off', 'windows'],
+}
+}
