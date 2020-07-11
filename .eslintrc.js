@@ -1,24 +1,19 @@
 module.exports = {
-    'env': {
-        'browser': true,
-        'commonjs': true,
-        'es6': true,
+    env: {
+        browser: true,
+        es2020: true,
+        node: true,
     },
-    'extends': [
+    extends: [
         'plugin:vue/essential',
-        'google',
+        '@vue/prettier', // 替换为安装的 `prettier`
     ],
-    'globals': {
-        'Atomics': 'readonly',
-        'SharedArrayBuffer': 'readonly',
+    parserOptions: {
+        ecmaVersion: 11,
+        sourceType: 'module',
     },
-    'parserOptions': {
-        'ecmaVersion': 2018,
+    plugins: ['vue'],
+    rules: {
+        quotes: ['error', 'single'], // 启用单引号
     },
-    'plugins': [
-        'vue',
-    ],
-    'rules': {
-        'linebreak-style': ['off', 'windows'],
-}
-}
+};
