@@ -23,6 +23,8 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+## api为后台接口
+
 ## 主要实现功能：
 ### 用户管理
 用户的增删查改
@@ -34,3 +36,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 调用后台接口查看当前订单的进度以及订单详情
 ### 数据统计
 使用数据报表进行数据统计
+
